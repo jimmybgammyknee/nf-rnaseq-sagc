@@ -1,9 +1,7 @@
-# SAGC RNA-Seq Nextflow Pipeline
+# TKI RNA-Seq Nextflow Pipeline
 
-<img src="https://github.com/sagc-bioinformatics/nf-rnaseq-sagc/blob/main/docs/figures/sagc-logo.png" width="600" height="300">
-
-This is the main repository for the South Australian Genomics Consortiums' RNA
-sequencing quantification pipeline implemented in `Nextflow`.
+This is forked from our original SAGC RNA-seq pipeline setup by @jimmybgammyknee and @a-lud. 
+`bcl2fastq` will probably be downgraded a little in favour of standard csv samplesheets.
 
 The pipeline involves the following processes:
 
