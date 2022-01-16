@@ -1,11 +1,12 @@
-# TKI RNA-Seq Nextflow Pipeline
+# TKI IG RNA-Seq Nextflow Pipeline
 
-This is forked from our original SAGC RNA-seq pipeline setup by @jimmybgammyknee and @a-lud. 
-`bcl2fastq` will probably be downgraded a little in favour of standard csv samplesheets.
+This is a fork repository for the South Australian Genomics Centre's (SAGC) RNA sequencing quantification pipeline implemented in `Nextflow`. 
+The pipeline was developed by Alastair Ludington and Jimmy Breen when at SAGC, and will be developed separately at the Adelaide Indigenous Genomics group at Telethon Kids Institute.
 
 The pipeline involves the following processes:
 
-* [BCL2fastq](https://sapac.support.illumina.com/sequencing/sequencing_software/bcl2fastq-conversion-software.html): Convert Illumina BCL files to FastQ
+* QC steps using fastqc, kraken and multiqc
+	* For Novaseq data, clumpify might need to be added
 * [STAR](https://github.com/alexdobin/STAR): Align RNA-sequences to a reference genome using STAR aligner
 * Deduplication: Remove PCR duplicates from aligned BAMs
   * [Umi-tools](https://github.com/CGATOxford/UMI-tools): If sequence data contains UMIs
