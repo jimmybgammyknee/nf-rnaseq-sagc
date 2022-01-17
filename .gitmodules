@@ -1,6 +1,6 @@
 [submodule "modules"]
 	path = modules
-	url = https://github.com/sagc-bioinformatics/modules.git
+	url = https://github.com/jimmybgammyknee/modules.git
 [submodule "workflows"]
 	path = workflows
-	url = https://github.com/sagc-bioinformatics/workflows.git
+	url = https://github.com/jimmybgammyknee/workflows.git
